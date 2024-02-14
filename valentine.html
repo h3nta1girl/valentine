@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to my valentine</title>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('color.png');
+            background-size: cover;
+            color: #413632;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1 {
+            visibility: hidden;
+            position: relative;
+            bottom: 50px;
+        }
+
+        p {
+            visibility: hidden;
+            position: relative;
+            bottom: 30px;
+
+        }
+
+        @keyframes typingHeader {
+            from {
+                visibility: visible;
+                width: 0%;
+            }
+
+            to {
+                visibility: visible;
+                width: 100%;
+            }
+        }
+
+        @keyframes typingParagraph {
+            from {
+                visibility: visible;
+                width: 0;
+            }
+
+            to {
+                visibility: visible;
+                width: 100%;
+            }
+        }
+
+        .message h1 {
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            font-size: 40px;
+            animation: 2s typingHeader steps(100, end) forwards;
+        }
+
+        .message p {
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            font-size: 20px;
+            animation: 2s typingParagraph 2s steps(150, end) forwards;
+        }
+
+        .gif {
+            width: 250px;
+            height: 240px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message">
+        <h1>Look who's my valentine!</h1>
+        <p>My precious boyfriend Ilia</p>
+        <p>You're the cutest and I looovee you very-very much!</p>
+        <p>Have a good day and see you soon❤️</p>
+        <img class="gif" src="peach-goma.gif">
+    </div>
+</body>
+
+
+</html>
